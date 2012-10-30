@@ -107,6 +107,9 @@ BOARD_HAS_NO_MISC_PARTITION := false
 
 BOARD_HAS_LARGE_FILESYSTEM := true
 
+# OTA Packaging
+TARGET_CUSTOM_RELEASETOOL := ./device/htc/primou/releasetools/squisher
+
 # Actual UMS different from TWRP for some reason
 
 BOARD_UMS_LUNFILE := /sys/class/android_usb/f_mass_storage/lun0/file

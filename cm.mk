@@ -15,3 +15,5 @@ PRODUCT_DEVICE := primou
 
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/app/UsbMassStorageToggle.apk:system/app/UsbMassStorageToggle.apk
+
+CM_EXTRAVERSION := ZEN
