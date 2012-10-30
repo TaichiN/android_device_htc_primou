@@ -21,12 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
 # The gps config appropriate for this device
-
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/gps.conf:system/etc/gps.conf
 
 ## (1) First, the most specific values, i.e. the aspects that are specific to GSM
-
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/root/init.primou.rc:root/init.primou.rc \
     device/htc/primou/prebuilt/root/init.usb.rc:root/init.usb.rc \
@@ -90,11 +88,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
-# Kernel modules
-#PRODUCT_COPY_FILES += \
+DEVICE_FOLDER := device/htc/primou
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/htc/primou/prebuilt/root/kernel
+LOCAL_KERNEL := $(DEVICE_FOLDER)/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -111,7 +108,6 @@ PRODUCT_LOCALES += en_GB
 $(call inherit-product, build/target/product/full_base.mk)
 
 ## Recovery
-
 PRODUCT_COPY_FILES += \
     device/htc/primou/recovery/sbin/choice_fn:recovery/root/sbin/choice_fn \
     device/htc/primou/recovery/sbin/detect_key:recovery/root/sbin/detect_key \

@@ -93,12 +93,12 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
+# Kernel Build
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
-TARGET_KERNEL_CONFIG := cyanogen_primou_defconfig
-TARGET_PREBUILT_KERNEL := device/htc/primou/prebuilt/root/kernel
+TARGET_KERNEL_CONFIG := cyanogenmod_primou_defconfig
+TARGET_PREBUILT_KERNEL := device/htc/primou/kernel
 
 # This is needed so CWM will function properly
-
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
 BOARD_SDEXT_DEVICE := /dev/block/mmcblk0p32
@@ -111,7 +111,6 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_CUSTOM_RELEASETOOL := ./device/htc/primou/releasetools/squisher
 
 # Actual UMS different from TWRP for some reason
-
 BOARD_UMS_LUNFILE := /sys/class/android_usb/f_mass_storage/lun0/file
 
 #Lun File testing
