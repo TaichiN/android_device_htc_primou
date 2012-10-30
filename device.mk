@@ -67,8 +67,7 @@ PRODUCT_PACKAGES += \
 # Additional packages
 PRODUCT_PACKAGES += \
      Torch \
-     FileExplorer \
-	 PinyinIME \
+     FileManager \
 
 # idc files
 PRODUCT_COPY_FILES += \
