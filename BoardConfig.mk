@@ -96,7 +96,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 # Kernel Build
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
 TARGET_KERNEL_CONFIG := cyanogenmod_primou_defconfig
-TARGET_PREBUILT_KERNEL := device/htc/primou/kernel
+TARGET_PREBUILT_KERNEL := device/htc/primou/prebuilt/root/kernel
 
 # This is needed so CWM will function properly
 BOARD_HAS_NO_SELECT_BUTTON := true

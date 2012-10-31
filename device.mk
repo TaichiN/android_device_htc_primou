@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
 DEVICE_FOLDER := device/htc/primou
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := $(DEVICE_FOLDER)/kernel
+LOCAL_KERNEL := $(DEVICE_FOLDER)/prebuilt/root/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -103,7 +103,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_LOCALES += en_GB
-
 
 $(call inherit-product, build/target/product/full_base.mk)
 
