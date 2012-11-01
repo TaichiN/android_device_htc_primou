@@ -60,7 +60,6 @@ BOARD_USES_QCOM_AUDIO_VOIPMUTE := false
 BOARD_USES_QCOM_AUDIO_RESETALL := false
 BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
 
-
 # Wifi related defines
 WIFI_BAND                        := 802_11_ABG
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
@@ -94,7 +93,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
 # Kernel Build
-TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
+TARGET_KERNEL_SOURCE := kernel/htc/primou
 TARGET_KERNEL_CONFIG := cyanogenmod_primou_defconfig
 TARGET_PREBUILT_KERNEL := device/htc/primou/prebuilt/root/kernel
 
