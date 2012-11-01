@@ -195,4 +195,8 @@ animation with the specified delay (in milliseconds), -1 will disable the animat
           <!-- Testing bluetooth wake lock problem -->
     <bool name="config_bluetooth_adapter_quick_switch">false</bool>
 
+  <!-- Timeout in MS for how long you have to long-press the back key to
+       kill the foreground app. -->
+    <integer name="config_backKillTimeout">1500</integer>
+
 </resources>
