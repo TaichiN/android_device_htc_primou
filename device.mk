@@ -65,7 +65,6 @@ PRODUCT_PACKAGES += \
 # Additional packages
 PRODUCT_PACKAGES += \
      Torch \
-     FileManager \
 
 # idc files
 PRODUCT_COPY_FILES += \
