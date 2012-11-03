@@ -52,7 +52,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 	
 # Inherit qcom proprietary blobs
-$(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
+#$(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/primou/overlay
 
@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
 
 # Additional packages
 PRODUCT_PACKAGES += \
-     Torch \
+     Torch
 
 # idc files
 PRODUCT_COPY_FILES += \
