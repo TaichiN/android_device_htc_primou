@@ -87,6 +87,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
+# init.d files
+PRODUCT_COPY_FILES += \
+    device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
+
 DEVICE_FOLDER := device/htc/primou
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
