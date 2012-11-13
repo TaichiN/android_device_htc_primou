@@ -91,17 +91,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
 
-DEVICE_FOLDER := device/htc/primou
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := $(DEVICE_FOLDER)/prebuilt/root/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
