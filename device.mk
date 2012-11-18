@@ -91,6 +91,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
 
+PRODUCT_COPY_FILES += \
+    device/htc/primou/prebuilt/bin/compcache:system/bin/compcache \
+    device/htc/primou/prebuilt/bin/handle_compcache:system/bin/handle_compcache
+
+PRODUCT_COPY_FILES += \
+    device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
