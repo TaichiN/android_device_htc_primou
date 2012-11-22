@@ -24,6 +24,12 @@ $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/gps.conf:system/etc/gps.conf
 
+# media
+PRODUCT_COPY_FILES += \
+    device/htc/primou/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/htc/primou/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/htc/primou/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf
+
 ## (1) First, the most specific values, i.e. the aspects that are specific to GSM
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/root/init.primou.rc:root/init.primou.rc \
@@ -51,9 +57,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 	
-# Inherit qcom proprietary blobs
-#$(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
-
 DEVICE_PACKAGE_OVERLAYS += device/htc/primou/overlay
 
 # GPS / Lights / Sensors
