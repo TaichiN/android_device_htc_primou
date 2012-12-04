@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
 
 # Additional packages
 PRODUCT_PACKAGES += \
-     Torch
+    Torch \
+    HwaSettings
 
 # idc files
 PRODUCT_COPY_FILES += \
@@ -94,9 +95,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
 
+# patched zram scripts
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/bin/compcache:system/bin/compcache \
     device/htc/primou/prebuilt/bin/handle_compcache:system/bin/handle_compcache
+
+# bluez config
+PRODUCT_COPY_FILES += \
+    device/htc/primou/prebuilt/etc/dbus.conf:system/etc/dbus.conf \
+    device/htc/primou/prebuilt/etc/dbus-1/system-services/org.bluez.service:system/etc/dbus-1/system-services/org.bluez.service
 
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
